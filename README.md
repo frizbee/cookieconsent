@@ -228,6 +228,8 @@ window.cookieconsent.initialise({
   ....
 })});
 ```
+## References
+For more information please visit `https://cookieconsent.insites.com/documentation/about-cookie-consent/`
 
 ## Development
 
@@ -237,7 +239,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cookieconsent. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/frizbee/cookieconsent. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
