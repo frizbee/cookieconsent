@@ -1,4 +1,4 @@
-# Cookieconsent
+# Cookie Consent
 
 The most popular solution to the EU cookie law for Rails applications. Cookie Consent is a free JavaScript plugin for alerting users about the use of cookies on your website. For more information visit: https://cookieconsent.insites.com
 
@@ -230,6 +230,7 @@ window.cookieconsent.initialise({
 ```
 ## References
 For more information please visit `https://cookieconsent.insites.com/documentation/about-cookie-consent/`
+cookieconsent.js currently `v 3.0.3`
 
 ## Development
 
