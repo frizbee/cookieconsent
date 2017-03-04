@@ -33,9 +33,13 @@ And in application.css:
 
 ## Usage
 
-Add js snippet to your js file or before </head>
+Add js snippet to your `views/layouts/application.html.erb` file or before `</head>`
 
-![Alt text](/images/light-blue.png?raw=true "Optional Title")
+Select theme:
+
+### Light blue
+
+![Alt text](/images/light-blue.png?raw=true "Light blue")
 
 ```
 <script>
@@ -49,6 +53,57 @@ window.cookieconsent.initialise({
     "button": {
       "background": "#56cbdb",
       "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "http://cookies.insites.com/about-cookies"
+  }
+})});
+</script>
+```
+
+### Dark yellow
+
+![Alt text](/images/dark-yellow.png?raw=true "Dark yellow")
+```
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "http://cookies.insites.com/about-cookies"
+  }
+})});
+</script>
+```
+
+
+### Dark blue
+
+![Alt text](/images/dark-blue.png?raw=true "Dark blue")
+```
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
     }
   },
   "content": {
