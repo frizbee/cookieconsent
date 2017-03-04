@@ -33,11 +33,11 @@ And in application.css:
 
 ## Usage
 
-Add js snippet to your `views/layouts/application.html.erb` file or before `</head>`
+Add js snippet to your `views/layouts/application.html.erb` file before `</head>`
 
-Select theme:
+###Select palette:
 
-### Light blue
+#### Light blue
 
 ![Alt text](/images/light-blue.png?raw=true "Light blue")
 
@@ -65,7 +65,7 @@ window.cookieconsent.initialise({
 </script>
 ```
 
-### Dark yellow
+#### Dark yellow
 
 ![Alt text](/images/dark-yellow.png?raw=true "Dark yellow")
 ```
@@ -91,7 +91,7 @@ window.cookieconsent.initialise({
 ```
 
 
-### Dark blue
+#### Dark blue
 
 ![Alt text](/images/dark-blue.png?raw=true "Dark blue")
 ```
@@ -114,6 +114,119 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+```
+
+#### Gray blue
+
+![Alt text](/images/gray-blue.png?raw=true "Gray blue")
+```
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "http://cookies.insites.com/about-cookies"
+  }
+})});
+</script>
+```
+
+#### Gray green
+
+![Alt text](/images/gray-green.png?raw=true "Gray green")
+```
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#efefef",
+      "text": "#404040"
+    },
+    "button": {
+      "background": "#8ec760",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "http://cookies.insites.com/about-cookies"
+  }
+})});
+</script>
+```
+
+### Select theme
+Theme layouts are: `"classic"`; `"edgeless"`; block by default and no need
+to add theme.
+
+```
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  ....
+  "theme": "classic",
+  ....
+})});
+```
+
+### Select position
+Positions are: `"top"`; `"bottom-right"`; `"bottom-left"`; and top (pushdown)
+add `"position": true` ;
+bottom is by default, no need to add position if it is bottom.
+
+```
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  ....
+  "position": "top",
+  "static": true /* if top (pushdown) only */
+  ....
+})});
+```
+
+### Compliance Type
+1. Just tell users that we use cookies
+  * You tell your users that you use cookies, and that by continuing to use your website they accept them.
+2. Let users opt out of cookies (Advanced)
+  * You tell your users that you use cookies, and give them one button to disable cookies, and another to dismiss the message.
+3. Ask users to opt into cookies (Advanced)
+  * You tell your users that you wish to use cookies, and give them one button to enable cookies, and another to refuse them.
+
+```
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  ....
+  "type": "opt-out",
+  "content": {
+    "deny": "Refuse cookies"
+  }
+  ....
+})});
+```
+
+```
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  ....
+  "type": "opt-in",
+  "content": {
+    "allow": "Allow cookies"
+  }
+  ....
+})});
 ```
 
 ## Development
