@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/cookieconsent.svg)](https://badge.fury.io/rb/cookieconsent)
 # Cookie Consent
 
 The most popular solution to the EU cookie law for Rails applications. Cookie Consent is a free JavaScript plugin for alerting users about the use of cookies on your website. For more information visit: https://cookieconsent.insites.com
