@@ -1,5 +1,5 @@
 require "cookieconsent/version"
 
 module Cookieconsent
-  # Your code goes here...
+  class Engine < ::Rails::Engine; end
 end
