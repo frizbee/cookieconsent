@@ -33,7 +33,33 @@ And in application.css:
 
 ## Usage
 
+Add js snippet to your js file or before </head>
 
+![Alt text](/images/light-blue.png?raw=true "Optional Title")
+
+```
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "http://cookies.insites.com/about-cookies"
+  }
+})});
+</script>
+```
 
 ## Development
 
